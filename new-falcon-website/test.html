@@ -1,0 +1,32 @@
+
+<html>
+<head>
+<script language="javascript">
+function write_headers_to_excel() 
+{
+  str="";
+
+  var myTableHead = document.getElementById('headers');
+  var rowCount = myTableHead.rows.length;
+  var colCount = myTableHead.getElementsByTagName("tr")[0].getElementsByTagName("th").length; 
+
+var ExcelApp = new ActiveXObject("Excel.Application");
+var ExcelSheet = new ActiveXObject("tube.xls");
+ExcelSheet.Application.Visible = true;
+
+for(var i=0; i<rowCount; i++) 
+{   
+    for(var j=0; j<colCount; j++) 
+    {           
+        str= myTableHead.getElementsByTagName("tr")[i].getElementsByTagName("th")[j].innerHTML;
+        ExcelSheet.ActiveSheet.Cells(i+1,j+1).Value = str;
+    }
+}
+
+}
+
+</script>
+</head>
+
+</body>
+</html>

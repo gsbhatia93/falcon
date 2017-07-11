@@ -1,0 +1,32 @@
+header {
+	margin-bottom:30px;
+}
+
+
+#images{
+    text-align:center;
+    margin:50px auto; 
+}
+#images a{
+    margin:0px 20px;
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+ }
+ div.return-top {
+	 text-align:left;
+	 color:black;
+	 background-color:black;
+ }
+ .return-top a{
+	 text-align:left;
+	 color:black;
+	 background-color:black;
+ }
+#top a{
+	background-color:black;
+	 color:green;
+ }
+ table, th, td {
+     border: 1px solid black;
+ }
